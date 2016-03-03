@@ -24,13 +24,13 @@ PKG_REV="0"
 PKG_ARCH="x86_64"
 PKG_LICENSE="GPL"
 PKG_SITE="http://www.peaklabs.net/apps/missing-link/"
-PKG_URL="http://www.peaklabs.net/missinglinkfiles/download.php?id=8665"
+PKG_URL="http://www.peaklabs.net/files/ml_openelec_beta.tar.gz"
 PKG_SOURCE_DIR="${PKG_NAME}_${PKG_VERSION}"
 PKG_DEPENDS_TARGET="toolchain"
 PKG_PRIORITY="optional"
 PKG_SECTION="tools"
-PKG_SHORTDESC="Missing Link is a cross-platform remote, file and link sharing application"
-PKG_LONGDESC="Missing Link is a cross-platform remote, file and link sharing application. Currently runs on Windows, Android and Linux"
+PKG_SHORTDESC="Missing Link is a cross-platform remote controller, file and link sharing application"
+PKG_LONGDESC="Missing Link is a cross-platform remote controller, file and link sharing application. Currently runs on Windows, Android and Linux"
 PKG_DISCLAIMER="this is an unofficial addon. please don't ask for support in openelec forum / irc channel"
 
 PKG_IS_ADDON="yes"
@@ -43,7 +43,8 @@ PKG_AUTORECONF="no"
 PKG_MAINTAINER="Peter Nemere (info@peaklabs.net)"
 
 # make_target() {
-#   make TARGET_CXX=$TARGET_CXX TARGET_CC=$TARGET_CC 7z 7za
+# Don't know when this gets called...
+#   make TARGET_CXX=$TARGET_CXX TARGET_CC=$TARGET_CC ??
 # }
 
 makeinstall_target() {
